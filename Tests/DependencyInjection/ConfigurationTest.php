@@ -18,7 +18,7 @@ class ConfigurationTest extends \PHPUnit_Framework_TestCase
     {
         $config = new Configuration();
         /** @var \Symfony\Component\Config\Definition\ArrayNode $node  */
-        $node = $config->getConfigTreeBuilder();
+        $node = $config->getConfigTreeBuilder()->buildTree();
         //check root path
         $this->assertEquals('mogreet', $node->getPath());
         //get child nodes and check them
@@ -27,7 +27,7 @@ class ConfigurationTest extends \PHPUnit_Framework_TestCase
         //check length
         $this->assertEquals(2, count($children));
         //check if all config values are available
-        $this->assertArrayHasKey('clientId', $children);
+        $this->assertArrayHasKey('client_id', $children);
         $this->assertArrayHasKey('token', $children);
     }
 }
