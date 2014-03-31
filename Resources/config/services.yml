@@ -1,3 +1,6 @@
 parameters:
+    mogreet.class: Survos\MogreetBundle\MogreetApi
 
 services:
+    mogreet.api:
+        class: %mogreet.class%
