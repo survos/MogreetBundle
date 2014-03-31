@@ -13,6 +13,14 @@ Add to the composer.json:
 }
 ```
 
+temporary until mogreet bundle has own autoloader
+```
+"psr-0": {
+    "":        "src/",
+    "Mogreet": "vendor/mogreet/mogreet-php"
+}
+```
+
 Add to your AppKernel.php
 ```
         $bundles = array(
@@ -27,6 +35,8 @@ survos_mogreet:
   client_id: %mogreet_client_id%
   token: %mogreet_token%
 ```
+
+
 
 
 
