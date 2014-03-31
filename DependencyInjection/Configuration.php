@@ -23,10 +23,10 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-            ->scalarNode('clientId')->isRequired()->end()
+            ->scalarNode('client_id')->isRequired()->end()
             ->scalarNode('token')->isRequired()->end()
             ->end();
 
-        return $treeBuilder->buildTree();
+        return $treeBuilder;
     }
 }
