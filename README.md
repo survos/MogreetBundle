@@ -9,7 +9,7 @@ Installation
 Add to the composer.json:
 ```
 "require": {
-    "vresh/twilio-bundle": "dev-master",
+    "survos/mogreet-bundle": "dev-master",
 }
 ```
 
