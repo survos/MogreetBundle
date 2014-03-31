@@ -13,7 +13,7 @@ Add to the composer.json:
 }
 ```
 
-temporary until mogreet bundle has own autoloader
+temporary until mogreet-php has own autoloader
 ```
 "psr-0": {
     "":        "src/",
