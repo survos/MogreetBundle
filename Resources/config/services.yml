@@ -1,5 +1,5 @@
 parameters:
-    mogreet.class: Survos\MogreetBundle\MogreetApi
+    mogreet.class: Survos\MogreetBundle\Service\MogreetApi
 
 services:
     mogreet.api:
