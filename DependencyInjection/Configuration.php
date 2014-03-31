@@ -18,12 +18,15 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('survos_mogreet');
+        $rootNode = $treeBuilder->root('mogreet');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
 
-        return $treeBuilder;
+        $rootNode
+            ->children()
+            ->scalarNode('clientId')->isRequired()->end()
+            ->scalarNode('token')->isRequired()->end()
+            ->end();
+
+        return $treeBuilder->buildTree();
     }
 }

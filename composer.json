@@ -18,7 +18,10 @@
         "mogreet/mogreet-php": "dev-master"
     },
     "autoload": {
-        "psr-0": { "Survos\\MogreetBundle": "" }
+        "psr-0": {
+            "Mogreet":               "vendor/mogreet/mogreet-php",
+            "Survos\\MogreetBundle": ""
+         }
     },
     "target-dir": "Survos/MogreetBundle"
 }
